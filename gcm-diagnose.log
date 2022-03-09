@@ -1,0 +1,243 @@
+﻿Diagnose log at 2022-03-09T01:17:09Z
+
+Executable: C:\Program Files\Git\mingw64\libexec\git-core\git-credential-manager-core.exe
+Version: 2.0.632+478753bbb7
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 22000)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\ASUS
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=LAPTOP-9MLLKTE0
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+POSTGIS_GDAL_ENABLED_DRIVERS=GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid
+OneDrive=C:\Users\ASUS\OneDrive
+ChocolateyLastPathUpdate=132751947979776862
+GTK_BASEPATH=C:\Program Files (x86)\GtkSharp\2.12\
+MPLENGINE=tkAgg
+RETICULATE_PYTHON=C:/Users/ASUS/AppData/Local/Programs/Python/Python39/python.exe
+TMPDIR=C:\Users\ASUS\AppData\Local\Temp
+SESSIONNAME=Console
+CLASSPATH=.;
+LC_CTYPE=C.UTF-8
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+RSTUDIO_CONSOLE_COLOR=256
+R_USER=C:/Users/ASUS/Documents/R/file
+PROJ_LIB=C:\Program Files\PostgreSQL\13\share\contrib\postgis-3.1\proj
+GIT_ASKPASS=rpostback-askpass
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+SSH_ASKPASS=rpostback-askpass
+LOCALAPPDATA=C:\Users\ASUS\AppData\Local
+MSYSTEM=MINGW64
+TERM=cygwin
+GDAL_DATA=C:\Program Files\PostgreSQL\13\gdal-data
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+RSTUDIO_SESSION_PORT=45530
+ProgramW6432=C:\Program Files
+windir=C:\WINDOWS
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+RS_SHARED_SECRET=63341846741
+RSTUDIO_PANDOC=C:/Program Files/RStudio/bin/pandoc
+PROCESSOR_REVISION=1801
+RSTUDIO=1
+PROCESSOR_LEVEL=23
+NUMBER_OF_PROCESSORS=8
+GFORTRAN_STDERR_UNIT=-1
+RSTUDIO_PROGRAM_MODE=desktop
+PROMPT=$P$G
+MSYS2_ENV_CONV_EXCL=R_ARCH
+RSTUDIO_TERMINAL_HOOKS=C:/Program Files/RStudio/resources/terminal/hooks
+ProgramFiles(x86)=C:\Program Files (x86)
+PUBLIC=C:\Users\Public
+PYTHONIOENCODING=utf-8
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+R_COMPILED_BY=gcc 8.3.0
+RSTUDIO_USER_IDENTITY=ASUS
+R_LIBS_USER=C:\Users\ASUS\Documents\R\win-library\4.1
+PLINK_PROTOCOL=ssh
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files (x86)
+PATH=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ASUS\bin;C:\Users\ASUS\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\ASUS\AppData\Local\Programs\Python\Python39;C:\Program Files\R\R-4.1.2\bin\x64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\mono\bin;C:\Program Files\TortoiseSVN\bin;C:\ProgramData\chocolatey\bin;C:\MinGW\bin;C:\Android\tools\bin;C:\Android\emulator;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\R\R-4.1.2\bin;C:\Program Files\R\R-4.1.2\bin\x64;C:\Program Files\swipl\bin;C:\Program Files\ffmpeg\bin;C:\Program Files\Zpaq;C:\Program Files\selenium_tools;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ASUS\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python310\;C:\Users\ASUS\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python39\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;C:\Program Files\PostgreSQL\13\bin;C:\Users\ASUS\AppData\Roaming\npm;C:\Users\ASUS\AppData\Roaming\Composer\vendor\bin;C:\Users\ASUS\.dotnet\tools;C:\Program Files\Mono\bin;C:\Program Files\heroku\bin;C:\xampp\mysql\bin;C:\Data pemrograman\src\dart\flutter\bin;C:\Program Files\R\R-4.1.1\bin;C:\Program Files\R\R-4.1.1\bin\x64;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.1\bin;;C:\Program Files\ffmpeg\bin;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Zpaq;C:\Users\ASUS\AppData\Roaming\TinyTeX\bin\win32;C:/Program Files/Git/bin;C:/Program Files/RStudio/bin/msys-ssh-1000-18
+ChocolateyInstall=C:\ProgramData\chocolatey
+RMARKDOWN_MATHJAX_PATH=C:/Program Files/RStudio/resources/mathjax-27
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.1\bin;
+RS_RPOSTBACK_PATH=C:/Program Files/RStudio/bin/rpostback
+RS_LOCAL_PEER=\\.\pipe\45530-rsession
+SystemRoot=C:\WINDOWS
+USERDOMAIN_ROAMINGPROFILE=LAPTOP-9MLLKTE0
+PENTAHO_JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211\jre
+PENTAHO_JAVA=C:\Program Files\Java\jdk1.8.0_211\jre\bin\java.exe
+HOME=C:\Users\ASUS
+SystemDrive=C:
+R_DOC_DIR=C:/PROGRA~1/R/R-41~1.2/doc
+CommonProgramW6432=C:\Program Files\Common Files
+RSTUDIO_MSYS_SSH=C:/Program Files/RStudio/bin/msys-ssh-1000-18
+LOGONSERVER=\\LAPTOP-9MLLKTE0
+R_LIBS=C:\Users\ASUS\Documents\R\win-library\4.1
+USERPROFILE=C:\Users\ASUS
+GFORTRAN_STDOUT_UNIT=-1
+DISPLAY=:0
+POSTGIS_ENABLE_OUTDB_RASTERS=1
+RSTUDIO_WINUTILS=C:/Program Files/RStudio/bin/winutils
+USERDOMAIN=LAPTOP-9MLLKTE0
+APPDATA=C:\Users\ASUS\AppData\Roaming
+HOMEDRIVE=C:
+R_HOME=C:/PROGRA~1/R/R-41~1.2
+QT_D3DCREATE_MULTITHREADED=1
+OPENSSL_CONF=C:\Program Files\PostgreSQL\psqlODBC\etc\openssl.cnf
+RSTUDIO_CONSOLE_WIDTH=85
+USERNAME=ASUS
+PROCESSOR_ARCHITEW6432=AMD64
+R_ARCH=/x64
+PROCESSOR_ARCHITECTURE=x86
+PYTHON_TOOLS=C:\Users\ASUS\AppData\Local\Programs\Python\Python39\Tools\scripts
+OS=Windows_NT
+ComSpec=C:\WINDOWS\system32\cmd.exe
+TEMP=C:\Users\ASUS\AppData\Local\Temp
+CLICOLOR_FORCE=1
+TMP=C:\Users\ASUS\AppData\Local\Temp
+OneDriveConsumer=C:\Users\ASUS\OneDrive
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\ASUS\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\ASUS\AppData\Local\Temp\b91f4785839a527612e71e97'... OK
+Reading from temporary file 'C:\Users\ASUS\AppData\Local\Temp\b91f4785839a527612e71e97'... OK
+Deleting temporary file 'C:\Users\ASUS\AppData\Local\Temp\b91f4785839a527612e71e97'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\ASUS
+UserDataDirectoryPath: C:\Users\ASUS\.gcm
+GetCurrentDirectory(): C:\Kuliah\Sisdas\Sisdas_R
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking basic networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:51623/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+Testing with IHttpClientFactory created HTTP client...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:51625/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.35.1.windows.2'
+Locating current repository... OK
+Git repository at 'C:/Kuliah/Sisdas/Sisdas_R/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager-core
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=main
+file:C:/Users/ASUS/.gitconfig	core.editor="C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+file:C:/Users/ASUS/.gitconfig	core.askpass=git-gui--askpass
+file:C:/Users/ASUS/.gitconfig	core.autocrlf=true
+file:C:/Users/ASUS/.gitconfig	user.email=ganteng3rizal@apps.ipb.ac.id
+file:C:/Users/ASUS/.gitconfig	user.name=rizal-mujahiddan69
+file:C:/Users/ASUS/.gitconfig	http.postbuffer=524288000
+file:C:/Users/ASUS/.gitconfig	credential.helperselector.selected=manager-core
+file:C:/Users/ASUS/.gitconfig	credential.helper=manager-core
+file:C:/Users/ASUS/.gitconfig	credential.helper=
+file:C:/Users/ASUS/.gitconfig	credential.helper=C:/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/rizal-mujahiddan69/Sisdas_IPB.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	user.email=ganteng3rizal@apps.ipb.ac.id
+file:.git/config	user.name=rizal-mujahiddan69
+file:.git/config	credential.helper=manager-core
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\ASUS\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\ASUS\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
