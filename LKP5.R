@@ -35,11 +35,8 @@ alg_som <- function(xx,yy,alp,epokku=1){
   clus_colname <- paste("data ke-",1:nrow(xx),sep='')
   clus_rowname <- paste("epochs ke-",1:epokku,sep='')
   
-  
   weg_ind <- paste("mat",1:(nrow(xx)*epokku),sep="")
   weig <- Dict$new(siapa="rizal")
-  
-  
   
   for(ulangan in 1:epokku){
     clus_sem <- c()
