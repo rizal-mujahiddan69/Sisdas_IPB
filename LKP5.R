@@ -1,5 +1,7 @@
 options(digits=13)
 
+# Penerapan Algorithm SOM
+
 library(Dict)
 dataku <- matrix(c(1,1,1,0,
                    1,0,1,1,
@@ -26,9 +28,13 @@ upd_learn <- function(i,w,alp){
   return(w+alp*(i-w))
 }
 
-mat_euclidku <- function(xx,yy,alp,epokku=1){
+alg_som <- function(xx,yy,alp,epokku=1){
   t <- 1
   clus <- matrix(1:(nrow(xx)*epokku),nrow = epokku)
+  clus_colname <- paste("data ke-",1:nrow(xx),sep='')
+  clus_rowname <- paste("epochs ke-",1:epokku,sep='')
+  
+  
   weg_ind <- paste("mat",1:(nrow(xx)*epokku),sep="")
   weig <- Dict$new(siapa="rizal")
   
@@ -68,11 +74,15 @@ mat_euclidku <- function(xx,yy,alp,epokku=1){
     }
   }
   weig$remove("siapa")
+  
+  rownames(clus) <- clus_rowname
+  colnames(clus) <- clus_colname
+  
   hasil_yy <- list(weight=weig,cluster=clus)
   print(clus)
   return(hasil_yy)
 }
 
 
-hasil <- mat_euclidku(dataku,weight_t,alp = alphaku,epokku = 2)
+hasil <- alg_som(dataku,weight_t,alp = alphaku,epokku = 2)
 print(hasil)
