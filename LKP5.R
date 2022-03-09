@@ -1,7 +1,6 @@
 options(digits=13)
 
 # Penerapan Algorithm SOM
-# rizal jelek
 
 
 library(Dict)
