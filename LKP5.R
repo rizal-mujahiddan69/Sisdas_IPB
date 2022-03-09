@@ -1,6 +1,8 @@
 options(digits=13)
 
 # Penerapan Algorithm SOM
+# rizal jelek
+
 
 library(Dict)
 dataku <- matrix(c(1,1,1,0,
