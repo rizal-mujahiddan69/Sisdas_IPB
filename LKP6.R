@@ -2,7 +2,7 @@ options(digits=13)
 
 # Penerapan Algorithm LVQ
 library(Dict)
-dataku <- matrix(c(1,1,0,0,
+dataku <- matrix(c(1,1,1,0,
                    1,0,1,1,
                    0,1,1,0,
                    0,0,1,1),
@@ -30,9 +30,17 @@ vec_euclid <- function(a,b){
 }
 
 
+# Parameter trainingku itu untuk training data
+# Parameter kelas itu target class
+# Parameter alp itu untuk learning rate (alpha)
+# Parameter d_alp itu untuk parameter derivatif learning rate
+# Parameter epokku untuk menentukan epoch
+
+
 LVQ <- function(trainingku,kelas,alp,d_alp=0,epokku=1){
   weig <- Dict$new(siapa="rizal")
-  weg_ind <- paste("weight_epoch",(1:epokku),sep="")
+  weig_t <- Dict$new(siapa="rizal")
+  dist_t <- Dict$new(siapa="rizal")
   
   ukuran <- dim(trainingku)
   kelas_uq <- unique(kelas)
@@ -40,14 +48,14 @@ LVQ <- function(trainingku,kelas,alp,d_alp=0,epokku=1){
   weight <- matrix(rep(0,ukuran[1]*len_kelas),
                    nrow=ukuran[1],
                    ncol=len_kelas)
-  
-  
   pan_t <- epokku*ukuran[1] - len_kelas
   
-  weg_ind_t <- paste("weight_t",(0:pan_t),sep="")
+  weg_ind    <- paste("weight_epoch",(1:epokku),sep="")
+  weg_ind_t  <- paste("weight_t",(1:pan_t),sep="")
+  dist_ind_t <- paste("Distance_t",(1:pan_t),sep="")
   
   timeku <- 1
-  weig_t <- Dict$new(siapa="rizal")
+  
   
   ind_uncount <- c()
   for(i in 1:len_kelas){
@@ -55,13 +63,12 @@ LVQ <- function(trainingku,kelas,alp,d_alp=0,epokku=1){
     ind_uncount <- c(ind_uncount,letak)
     weight[,i] <- trainingku[letak,]
   }
-  
-  weig_t[weg_ind_t[timeku]] <- weight
+  init_weight <- weight
   weig_t$remove("siapa")
+  
   
   ind_count <- (1:ukuran[1])
   ind_count <- setdiff(ind_count,ind_uncount)
-  timeku <- timeku + 1
   for(i in ind_count) {
     dist_euc <- c()
     for(j in 1:ncol(weight)){
@@ -69,7 +76,8 @@ LVQ <- function(trainingku,kelas,alp,d_alp=0,epokku=1){
                     vec_euclid(trainingku[i,],
                                weight[,j]))
     }
-    print(dist_euc)
+    #print(dist_euc)
+    
     ind_win <- which.min(dist_euc)
     if(kelas[i] != ind_win){
       weight[,ind_win] = weight[,ind_win] - 
@@ -79,12 +87,17 @@ LVQ <- function(trainingku,kelas,alp,d_alp=0,epokku=1){
       weight[,ind_win] = weight[,ind_win] +
         (alp * (trainingku[i,] - weight[,ind_win]));
     }
-    weig_t[weg_ind_t[timeku]] <- weight
+    dist_t[dist_ind_t[timeku]] <- dist_euc
+    
+    weig_t[weg_ind_t[timeku]]  <- weight
     timeku <- timeku + 1
+    
+    # print alp
+    #print(alp)
   }
+  alp = (alp*d_alp)
   weig[weg_ind[1]] <- weight 
   
-  alp = alp - (alp*d_alp)
   
   ## cek ya
   if(epokku > 1){
@@ -97,7 +110,7 @@ LVQ <- function(trainingku,kelas,alp,d_alp=0,epokku=1){
                         vec_euclid(trainingku[i,],
                                    weight[,j]))
         }
-        print(dist_euc)
+        #print(dist_euc)
         ind_win <- which.min(dist_euc)
         if(kelas[i] != ind_win){
           weight[,ind_win] = weight[,ind_win] - 
@@ -107,19 +120,41 @@ LVQ <- function(trainingku,kelas,alp,d_alp=0,epokku=1){
           weight[,ind_win] = weight[,ind_win] +
             (alp * (trainingku[i,] - weight[,ind_win]));
         }
+        dist_t[dist_ind_t[timeku]] <- dist_euc
         weig_t[weg_ind_t[timeku]] <- weight
         timeku <- timeku + 1
+        
+        # print alp
+        #print(alp)
       }
-      alp = alp - (alp*d_alp)
+      alp = (alp*d_alp)
       weig[weg_ind[(ulangan)]] <- weight
     }
   }
   weig$remove("siapa")
-  attrib <- list(berat_epok = weig,berat_waktu = weig_t)
+  dist_t$remove("siapa")
+  
+  # Membuat Attribute yah
+  
+  attrib <- list(weight_epoch = weig,weight_t = weig_t,
+                 distance_t = dist_t,awal_weight = init_weight)
   return(attrib)
 }
 
 hasil_weight <- LVQ(dataku,target,alp = alphaku,
                       d_alp = d_alpha,epokku = 2)
-#print(hasil_weight)
 
+letak <- length(hasil_weight$weight_t$keys)
+
+print(hasil_weight$awal_weight)
+
+for(ii in 1:letak){
+  distanceku <- hasil_weight$distance_t$values[ii] 
+  weightku   <- hasil_weight$weight_t$values[ii]
+  print(paste("pembatas",ii))
+  print("distance",end="")
+  print(distanceku)
+  
+  print("weight",end="")
+  print(weightku)
+}
